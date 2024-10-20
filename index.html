@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact form</title>
+    <!--Bootstrap CDN-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <!--Main css file-->
+    <link rel="stylesheet" href="./assests/css/style.css">
+</head>
+
+<body>
+    <div class="main d-flex align-items-center justify-content-center">
+        <form class="row g-3 bg-white p-4 rounded-4">
+            <h3>Contact Us</h3>
+            <div class="col-md-6">
+                <label for="validationServer01" class="form-label">First name</label>
+                <input type="text" class="form-control name" id="validationServer01" value="" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+                <div class="invalid-feedback">
+                    Please enter at least two letters, don't using numbers or special characters.
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="validationServer02" class="form-label">Last name</label>
+                <input type="text" class="form-control name" id="validationServer02" value="" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+                <div class="invalid-feedback">
+                    Please enter at least two letters, don't using numbers or special characters.
+                </div>
+            </div>
+            <div class="col-md-12">
+                <label for="validationServer01" class="form-label">Email Address</label>
+                <input type="email" class="form-control email" id="validationServer01" value="" required>
+                <div class="valid-feedback">
+                    valid Email
+                </div>
+                <div class="invalid-feedback">
+                    invalid Email
+                </div>
+            </div>
+            <div class="query">
+                <label for="validationServer02" class="form-label">Query Type</label>
+                <div class="col-12 d-flex justify-content-between align-items-center checks flex-wrap">
+                    <div class="col-12 col-md-6">
+                        <div class="check p-2 d-flex justify-content-start align-items-center rounded-2" data-radio="1">
+                            <input class="form-check-input radio" type="radio" name="group" value="general" id="flexCheckGeneral">
+                            <label class="form-check-label" for="flexCheckGeneral">
+                                General Enquiry
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="check ms-md-2 one p-2 d-flex justify-content-start align-items-center rounded-2" data-radio="2">
+                            <input class="form-check-input radio" type="radio" name="group" value="support" id="flexCheckSupport">
+                            <label class="form-check-label" for="flexCheckSupport">
+                                Support Request
+                            </label>
+                        </div>
+                    </div>
+                </div>   
+            </div>         
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input checkbox" type="checkbox" value="" id="invalidCheck3"
+                        aria-describedby="invalidCheck3Feedback" required>
+                    <label class="form-check-label lable text-black" for="invalidCheck3">
+                        I consent to being contacted by the team
+                    </label>
+                </div>
+            </div>
+            <div class="col-12">
+                <button class="btn text-light w-100" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!--Bootstrap CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!--Main JS file-->
+    <script src="./assests/js/script.js"></script>
+</body>
+
+</html>
